@@ -1,0 +1,231 @@
+/* ====== RESET GLOBAL ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f6fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+  background-color: #1e4ed8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #c7d2fe;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  background-color: #1e3a8a;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ====== HEADERS ====== */
+h1, h2, h3 {
+  text-align: center;
+  margin: 20px 0;
+  color: #111827;
+}
+
+/* ====== CONTAINER GERAL ====== */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* ====== IMAGENS (página inicial) ====== */
+.container img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin: 15px auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.container img:hover {
+  transform: scale(1.03);
+}
+
+/* ====== TABELAS ====== */
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+thead {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+thead th {
+  padding: 12px;
+  text-align: center;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background 0.2s;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+tbody tr:hover {
+  background-color: #eef2ff;
+}
+
+tbody td {
+  padding: 12px;
+  text-align: center;
+}
+
+/* ====== BOTÕES ====== */
+.btn {
+  padding: 6px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-edit {
+  background-color: transparent;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.btn-edit:hover {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.btn-delete {
+  background-color: #dc2626;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background-color: #b91c1c;
+}
+
+/* ====== FORMULÁRIOS (login, cadastro etc.) ====== */
+.form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #111827;
+}
+
+form input, 
+form select, 
+form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+form input:focus, 
+form select:focus, 
+form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.3);
+}
+
+form button {
+  padding: 10px;
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #1e40af;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    margin: 8px 0;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+}
